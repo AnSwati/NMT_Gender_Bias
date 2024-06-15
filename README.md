@@ -11,7 +11,7 @@ Setup
 Install Dependencies:
 
 sh
-Copy code
+
 pip install OpenNMT-tf tensorflow numpy
 Download Datasets:
 
@@ -32,8 +32,7 @@ Load Data:
 Use the provided functions to load training and evaluation datasets.
 Train the Model:
 
-python
-Copy code
+
 runner.train(
     num_steps=100000,
     report_every=100,
@@ -46,12 +45,9 @@ Use the load_eval_dataset function to load the WinoBias and WinoMT datasets.
 Evaluate the Model:
 
 Use the evaluate_model function to run the model on the evaluation datasets and calculate metrics.
-Print Results:
 
-Print accuracy, Delta G, and Delta S for both WinoBias and WinoMT evaluations.
-Example Usage
-python
-Copy code
+
+
 # Training the model
 runner.train(num_steps=100000, report_every=100, save_checkpoint_steps=1000)
 
